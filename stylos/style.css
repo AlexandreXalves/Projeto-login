@@ -12,27 +12,41 @@
 }
 
 body {
-  background-color: var(--cor3);
+  background-color: var(--cor1);
   height: 100vh;
 }
 
-#longi {
-    background-color: rgb(255, 255, 255);
-    margin: auto;
+main {
+    position: relative;
+    height: 100vh;
+}
+
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+     overflow: hidden;
+
     border-radius: 20px;
-    width: 90vw;
-    display: block;
-    
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+
+    transition: width 1s, height 1s;
+ 
 }
 
-img {
+section#login > div#imagen {
+    display: block;
     width: 100%;
-    border-radius: 20px 20px 0px 0px;
-    background-color: var(--cor2);
+    height: 200px;
+    background: #2fa866 url('../img/logo.png') center/cover no-repeat;
+}
+
+#formulario {
+    padding: 10px;
+    display: block;
+    padding: 10px;
 }
 
 #formulario h1 {
@@ -51,38 +65,41 @@ img {
     border: 2px solid black;
     border-radius: 10px;
     background-color: var(--cor2);
-    margin: 10px;
     height: 40px;
     display: flex;
     position: relative;
+    overflow: hidden;
+}
+
+#pk{
+    max-width: 90vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+#pk input:hover{
+    background-color: var(--cor3);
+    color: white;
+}
+
+#pk  input{
+    width: 100%;
+    border: none;
+    border-radius: 0px;
 }
 
 input {
     border: none;
-    background-color: var(--cor0);
     position: absolute;
     right: 0;
     border-radius: 15px 0px 0px 15px;
-    margin: 1px;
     height: 100%;
     width: 90%;
 }
 
-fieldset {
-    border: none;
-    background-color: white;
-}
-
-fieldset input {
-    background-color: var(--cor0);
-    width: 100%;
-    border-radius: 15px;
-}
-
-fieldset input:hover {
-    background-color: var(--cor2);
-    width: 100%;
-    border-radius: 15px;
-}
 
     
