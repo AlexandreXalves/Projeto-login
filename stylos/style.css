@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor0: #ffffff;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+}
+
+body {
+  background-color: var(--cor3);
+  height: 100vh;
+}
+
+#longi {
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    width: 90vw;
+    display: block;
+    
+}
+
+img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    background-color: var(--cor2);
+}
+
+#formulario h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+#formulario p {
+    margin: 10px;
+    font-size: 1.3em;
+}
+
+
+#inpu {
+    max-width: 90vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: var(--cor2);
+    margin: 10px;
+    height: 40px;
+    display: flex;
+    position: relative;
+}
+
+input {
+    border: none;
+    background-color: var(--cor0);
+    position: absolute;
+    right: 0;
+    border-radius: 15px 0px 0px 15px;
+    margin: 1px;
+    height: 100%;
+    width: 90%;
+}
+
+fieldset {
+    border: none;
+    background-color: white;
+}
+
+fieldset input {
+    background-color: var(--cor0);
+    width: 100%;
+    border-radius: 15px;
+}
+
+fieldset input:hover {
+    background-color: var(--cor2);
+    width: 100%;
+    border-radius: 15px;
+}
+
+    

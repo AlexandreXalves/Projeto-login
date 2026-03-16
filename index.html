@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="stylos/style.css">
+    <link rel="stylesheet" href="stylos/media.css">
+</head>
+
+<body>
+
+    <main>
+        <section id="longi">
+            <div id="imagen">
+                <img src="img/logo.png" alt="logo">
+            </div>
+
+            <div id="formulario">
+                <h1>Login</h1>
+                <p> Seja bem vindo de volta, faça o login para te acessor a sua conta. para poder fazer suas
+                    configurações</p>
+
+                <form action="login.php" method="post">
+                    <p id="inpu">
+                        <fieldest class="ch">
+                            <label for="ilogin"><span class="material-symbols-outlined">
+                                    person
+                                </span></label>
+                            <input type="email" name="login" id="ilogin" required placeholder="seu email">
+                    </p>
+
+                    <p id="inpu">
+                        <label for="isenha"><span class="material-symbols-outlined">
+                                key
+                            </span></label>
+                        <input type="password" name="senha" id="isenha" required minlength="8" placeholder="sua senha">
+                    </p>
+                    </fieldest>
+
+                    <fieldset>
+                        <p id="inpu">
+                            <label for="ientra"></label>
+                            <input type="submit" value="Entrar" id="ientra">
+                        </p>
+
+                        <p id="inpu">
+                            <label for="ientra"></label>
+                            <input type="reset" value="esqueci minha senha" id="ientra">
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
