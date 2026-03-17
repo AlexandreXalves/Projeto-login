@@ -12,8 +12,8 @@
 }
 
 body {
-  background-color: var(--cor1);
-  height: 100vh;
+    background-color: var(--cor1);
+    height: 100vh;
 }
 
 main {
@@ -25,28 +25,28 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-     overflow: hidden;
-
+    overflow: hidden;
+    height: 600px;
     border-radius: 20px;
     width: 350px;
     background-color: rgb(255, 255, 255);
+    position: relative;
 
+    transform: translate(-50%, -50%);
     transition: width 1s, height 1s;
- 
 }
 
-section#login > div#imagen {
+section#login>div#imagen {
     display: block;
     width: 100%;
     height: 200px;
     background: #2fa866 url('../img/logo.png') center/cover no-repeat;
 }
 
-#formulario {
-    padding: 10px;
+section#login>div#formulario {
     display: block;
     padding: 10px;
+
 }
 
 #formulario h1 {
@@ -59,47 +59,77 @@ section#login > div#imagen {
     font-size: 1.3em;
 }
 
-
-#inpu {
-    max-width: 90vh;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: var(--cor2);
-    height: 40px;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-}
-
-#pk{
-    max-width: 90vh;
-    border: 2px solid black;
-    border-radius: 10px;
-    height: 40px;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-}
-
-#pk input:hover{
+form>div.campo {
     background-color: var(--cor3);
-    color: white;
-}
-
-#pk  input{
     width: 100%;
-    border: none;
-    border-radius: 0px;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
 }
 
-input {
-    border: none;
-    position: absolute;
-    right: 0;
-    border-radius: 15px 0px 0px 15px;
+div.campo>input:focus-within {
+    background-color: #ffffff;
+}
+
+div.campo>i {
+    color: #ffffff;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+
+}
+
+div.campo>input {
+    background-color: var(--cor1);
     height: 100%;
-    width: 90%;
+    width: calc(100% - 44px);
+    border-radius: 5px;
+    border: none;
+    padding: 4px;
+    font-size: 1em;
+
+    transform: translateY(-12px);
 }
 
+div.campo>label {
+    display: none;
 
-    
+}
+
+form>input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor2);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form>input[type=submit]:hover {
+    background-color: var(--cor1);
+}
+
+form>a.botao {
+    background-color: aqua;
+    height: 40px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #000000;
+}
+
+form>a.botao:hover {
+    background-color: var(--cor1);
+}
+
+form>a.botao>i {
+    font-size: 1em;
+}

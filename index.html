@@ -24,32 +24,24 @@
                     configurações</p>
 
                 <form action="login.php" method="post" autocomplete="on">
-                    <p id="inpu">
-                        <fieldest class="ch">
-                            <label for="ilogin"><span class="material-symbols-outlined">
-                                    person
-                                </span></label>
-                            <input type="email" name="login" id="ilogin" required placeholder="seu email" autocomplete="email">
-                    </p>
+                   
+                    <div class="campo">
+                        <i class="material-symbols-outlined">person</i>
+                        <input type="email" name="email" id="imail" placeholder="Email" autocomplete="email" required>
+                        <label for="imail"></label>
+                    </div>
 
-                    <p id="inpu">
-                        <label for="isenha"><span class="material-symbols-outlined">
-                                key
-                            </span></label>
-                        <input type="password" name="senha" id="isenha" required minlength="8" placeholder="sua senha" autocomplete="current-password">
-                    </p>
-                    </fieldest>
+                    <div class="campo">
+                        <i class="material-symbols-outlined">vpn_key</i>
+                        <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required>
+                        <label for="isenha"></label>
+                    </div>
 
-                    
-                        <p id="pk">
-                            <label for="ientra"></label>
-                            <input type="submit" value="Entrar" id="ientra">
-                        </p>
+                    <input type="submit" value="Entrar">
 
-                        <p id="pk">
-                            <label for="ientra"></label>
-                            <input type="reset" value="esqueci minha senha" id="ientra">
-                        </p>
+                    <a href="#" class="botao">Esqueci minha senha
+                        <i class="material-symbols-outlined">mail</i>
+                    </a>
                     
                 </form>
             </div>
